@@ -5,7 +5,7 @@ function modifyDropboxLink(originalLink) {
   // Check if the link contains the "dl=0" parameter and hasn't been modified
   if (correctedLink.includes("dl=0") && !correctedLink.includes("dl=1")) {
     // Modify the link to set "dl=1"
-    return correctedLink.replace("dl=0", "dl=1");
+    return correctedLink.replace("dl=0", "raw=1");
   }
   // If "dl=0" is not found or it has already been modified, return the corrected link
   return correctedLink;
